@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         bannerBG: "url(/bannerbg.png)",
+        PresentationBG: "url(/presentation.png)",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],

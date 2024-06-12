@@ -15,21 +15,21 @@ const Banner = () => {
                 <div className="h-[6px] w-[6px] rounded-full bg-main"></div>
               </Flex>
 
-              <p className=" font-roboto font-medium  text-main 2xl:text-[12px] 2xl:leading-[170%] tracking-[3px] uppercase">
+              <p className=" font-roboto font-medium  text-main xl:text-[12px] xl:leading-[170%] tracking-[3px] uppercase">
                 trendy application
               </p>
             </Flex>
 
-            <h1 className=" font-darker font-extrabold 2xl:text-[80px] 2xl:leading-[90%] text-white capitalize">
+            <h1 className=" font-darker font-extrabold xl:text-[80px] xl:leading-[90%] text-white capitalize">
               work faster with powerful tools
             </h1>
 
-            <p className=" font-darker font-medium 2xl:text-[28px] 2xl:leading-[110%] text-white mt-[30px]">
+            <p className=" font-darker font-medium xl:text-[28px] xl:leading-[110%] text-white mt-[30px]">
               Laboris culpa ea incididunt dolore ipsum tempor duis do ullamco
               eiusmod officia magna ad id.
             </p>
 
-            <button className=" mt-[50px] py-4 px-[35px] rounded-full bg-main font-roboto font-medium 2xl:text-[16px] 2xl:leading-[170%] capitalize text-white">
+            <button className=" mt-[50px] py-4 px-[35px] rounded-full bg-main font-roboto font-medium xl:text-[16px] xl:leading-[170%] capitalize text-white">
               Learn more
             </button>
           </div>
