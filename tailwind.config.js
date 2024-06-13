@@ -6,6 +6,9 @@ export default {
       backgroundImage: {
         bannerBG: "url(/bannerbg.png)",
         PresentationBG: "url(/presentation.png)",
+        TrailBG: "url(/trial.png)",
+        CTABG: "url(/CTA.png)",
+        footerBG: "url(/footer.png)",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],

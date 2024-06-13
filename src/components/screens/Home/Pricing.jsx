@@ -12,7 +12,12 @@ const Pricing = () => {
   return (
     <section className="mt-[160px]">
       <Container>
-        <Flex>
+        <Flex className=" relative">
+          <Image
+            className="absolute right-[-200px] top-[-120px] w-[150px]"
+            src="/shape1.svg"
+            alt="shape"
+          />
           <div className="w-1/2">
             <div>
               <Flex className="items-center justify-start gap-1">
