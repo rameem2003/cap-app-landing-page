@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const PageBanner = ({ text }) => {
   return (
-    <section className=" relative pt-[159px] pb-[113px] bg-pageBG bg-cover bg-no-repeat">
+    <section className=" relative pt-[159px] pb-[181px] bg-pageBG bg-cover bg-no-repeat">
       <Container>
         <div className=" relative z-20">
           <h1 className=" font-darker font-semibold xl:text-[60px] leading-[100%] text-white">
@@ -22,7 +22,7 @@ const PageBanner = ({ text }) => {
           </Flex>
         </div>
       </Container>
-      <p className=" left-10 bottom-[10px] absolute font-code font-normal xl:text-[120px] text-[#CCCCCC]/60">
+      <p className=" left-10 bottom-[50px] absolute font-code font-normal xl:text-[120px] text-[#CCCCCC]/60">
         {text}
       </p>
     </section>
