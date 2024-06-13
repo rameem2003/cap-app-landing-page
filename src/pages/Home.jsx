@@ -7,6 +7,7 @@ import Pricing from "../components/screens/Home/Pricing";
 import Comments from "../components/screens/Home/Comments";
 import Trail from "../components/screens/Home/Trail";
 import FAQ from "../components/screens/Home/FAQ";
+import ArticleSection from "../components/screens/Home/ArticleSection";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Comments />
       <Trail />
       <FAQ />
+      <ArticleSection />
     </>
   );
 };

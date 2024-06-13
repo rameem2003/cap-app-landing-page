@@ -56,7 +56,7 @@ const Footer = () => {
         <UL className="flex items-center gap-[30px] justify-center">
           <LI className="flex items-center gap-[30px]">
             <span className="  font-roboto font-normal 2xl:text-[16px] 2xl:leading-[170%] text-white">
-              FEATURES
+              Features
             </span>
             <div className=" w-[4px] h-[4px] bg-white rounded-full"></div>
           </LI>

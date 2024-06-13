@@ -9,6 +9,7 @@ export default {
         TrailBG: "url(/trial.png)",
         CTABG: "url(/CTA.png)",
         footerBG: "url(/footer.png)",
+        pageBG: "url(/pagebanner.png)",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
