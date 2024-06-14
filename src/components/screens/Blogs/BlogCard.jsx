@@ -6,7 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const BlogCard = () => {
   return (
     <div className=" w-full rounded-[20px] overflow-hidden shadow-md mb-[50px]">
-      <div className=" w-full h-[530px] bg-[#E6EBFC] relative">
+      <div className=" w-full h-[300px] xl:h-[530px] bg-[#E6EBFC] relative">
         <div className=" p-[14px] rounded-t-[5px] bg-main w-[60px] absolute left-10 bottom-0">
           <p className=" font-roboto font-medium xl:text-[14px] text-white text-center">
             DEC
@@ -29,8 +29,8 @@ const BlogCard = () => {
         </p>
 
         <Flex className="mt-[30px] justify-between">
-          <Flex className="gap-3 items-center">
-            <Flex className="gap-[10px]">
+          <Flex className="gap-3 items-center flex-wrap">
+            <Flex className="gap-[10px] items-center">
               <div className="w-[20px] h-[20px] bg-[#BD93D8] rounded-full"></div>
 
               <span className=" font-roboto font-normal xl:text-[14px] text-textoff">

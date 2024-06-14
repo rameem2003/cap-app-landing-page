@@ -8,7 +8,7 @@ const PageBanner = ({ text }) => {
     <section className=" relative pt-[159px] pb-[181px] bg-pageBG bg-cover bg-no-repeat">
       <Container>
         <div className=" relative z-20">
-          <h1 className=" font-darker font-semibold xl:text-[60px] leading-[100%] text-white">
+          <h1 className=" font-darker font-semibold text-[40px] xl:text-[60px] leading-[100%] text-white">
             {text}
           </h1>
           <Flex className="mt-[30px] items-center gap-3">

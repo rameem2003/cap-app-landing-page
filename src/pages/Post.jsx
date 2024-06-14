@@ -14,12 +14,12 @@ const Post = () => {
   return (
     <main className=" relative">
       <Image
-        className="absolute left-52 top-[470px] w-[150px]"
+        className="absolute hidden lg:block left-52 top-[470px] w-[150px]"
         src="/shape1.svg"
         alt="shape"
       />
       <Image
-        className="absolute right-10 bottom-[50px] w-[150px]"
+        className="absolute hidden lg:block right-10 bottom-[50px] w-[150px]"
         src="/shape1.svg"
         alt="shape"
       />
@@ -27,9 +27,9 @@ const Post = () => {
       <PageBanner text="Post" />
 
       <Container>
-        <Flex className="gap-[50px]">
-          <div className="w-9/12">
-            <div className=" w-full h-[530px] bg-[#E6EBFC] rounded-[20px] relative">
+        <Flex className="gap-[50px] flex-col md:flex-row">
+          <div className="w-full md:w-7/12 xl:w-9/12">
+            <div className=" w-full h-[300px] xl:h-[530px] bg-[#E6EBFC] rounded-[20px] relative">
               <div className=" p-[14px] rounded-t-[5px] bg-main w-[60px] absolute left-10 bottom-0">
                 <p className=" font-roboto font-medium xl:text-[14px] text-white text-center">
                   DEC
@@ -178,11 +178,11 @@ const Post = () => {
               </Flex>
             </Flex>
 
-            <Flex className="mt-10 py-5 px-10 rounded-[20px] shadow-md">
-              <div className="w-4/12">
+            <Flex className="mt-10 py-5 px-10 flex-col lg:flex-row rounded-[20px] shadow-md">
+              <div className="w-full lg:w-4/12">
                 <Image src="/shape3.png" />
               </div>
-              <div className="w-8/12">
+              <div className="w-full lg:w-8/12">
                 <h2 className=" font-darker font-semibold xl:text-[28px] text-black">
                   Robert Fox
                 </h2>
@@ -311,7 +311,7 @@ const Post = () => {
               </button>
             </div>
           </div>
-          <div className="w-3/12">
+          <div className="w-full md:w-5/12 xl:w-3/12">
             <SideSection />
           </div>
         </Flex>

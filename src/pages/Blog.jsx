@@ -10,27 +10,27 @@ const Blog = () => {
   return (
     <main className=" relative">
       <Image
-        className="absolute left-52 top-[470px] w-[150px]"
+        className="absolute hidden lg:block left-52 top-[470px] w-[150px]"
         src="/shape1.svg"
         alt="shape"
       />
       <Image
-        className="absolute right-10 bottom-[50px] w-[150px]"
+        className="absolute hidden lg:block right-10 bottom-[50px] w-[150px]"
         src="/shape1.svg"
         alt="shape"
       />
       <PageBanner text="Blog" />
 
       <Container>
-        <Flex className="mt-[90px] gap-[50px]">
-          <div className="w-9/12">
+        <Flex className="mt-[90px] gap-[50px] flex-col md:flex-row ">
+          <div className=" w-full md:w-7/12 xl:w-9/12">
             <BlogCard />
             <BlogCard />
             <BlogCard />
             <BlogCard />
             <BlogCard />
           </div>
-          <div className="w-3/12">
+          <div className=" w-full md:w-5/12 xl:w-3/12">
             <SideSection />
           </div>
         </Flex>

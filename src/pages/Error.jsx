@@ -10,8 +10,8 @@ const Error = () => {
     <section>
       <PageBanner text="Opps" />
       <Container>
-        <Flex className="mt-[58px] gap-[75px] items-center">
-          <div className="w-1/2">
+        <Flex className="mt-[58px] gap-[75px] items-center flex-col md:flex-row">
+          <div className=" w-full md:w-1/2">
             <p className=" font-darker font-bold text-[80px] text-black">404</p>
             <p className=" font-darker font-semibold text-[50px] text-black">
               Page not found
@@ -32,7 +32,7 @@ const Error = () => {
               <IoSearch className=" text-[#B3B1B7] text-[18px] absolute right-2 top-[50%] translate-y-[-50%]" />
             </div>
           </div>
-          <div className="w-1/2">
+          <div className=" w-full md:w-1/2">
             <Image src="/error.svg" />
           </div>
         </Flex>
