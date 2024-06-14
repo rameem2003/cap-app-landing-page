@@ -6,7 +6,16 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const BlogCard = () => {
   return (
     <div className=" w-full rounded-[20px] overflow-hidden shadow-md mb-[50px]">
-      <div className=" w-full h-[530px] bg-[#E6EBFC]"></div>
+      <div className=" w-full h-[530px] bg-[#E6EBFC] relative">
+        <div className=" p-[14px] rounded-t-[5px] bg-main w-[60px] absolute left-10 bottom-0">
+          <p className=" font-roboto font-medium xl:text-[14px] text-white text-center">
+            DEC
+          </p>
+          <p className=" font-roboto font-bold xl:text-[28px] text-white text-center mt-1">
+            10
+          </p>
+        </div>
+      </div>
 
       <div className="py-[50px] px-10 ">
         <h1 className=" font-darker font-semibold text-[36px] text-black capitalize">
