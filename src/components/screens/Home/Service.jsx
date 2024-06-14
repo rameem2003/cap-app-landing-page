@@ -14,25 +14,25 @@ const Service = () => {
           </Flex>
 
           <div className="mt-5 relative">
-            <p className=" absolute w-full text-center left-[50%] top-[-15px] translate-x-[-50%] font-code font-normal 2xl:text-[40px] text-fadeText">
+            <p className=" absolute w-full text-center left-[50%] top-[-1px] xl:top-[-15px] translate-x-[-50%] font-code font-normal text-[20px] 2xl:text-[40px] text-fadeText">
               See what you will get with us
             </p>
-            <p className=" relative z-10 font-darker font-semibold 2xl:text-[50px] 2xl:leading-[100%] text-black text-center capitalize">
+            <p className=" relative z-10 font-darker font-semibold text-[30px] 2xl:text-[50px] 2xl:leading-[100%] text-black text-center capitalize">
               See what you will get with us
             </p>
           </div>
           <p></p>
         </div>
 
-        <Flex className="mt-[50px] items-center justify-center gap-[30px] ">
-          <div className="w-[30%] shadow-lg py-[34px] px-[32px] rounded-[20px]">
+        <Flex className="mt-[50px] items-center flex-col sm:flex-row sm:flex-wrap justify-center gap-[30px] ">
+          <div className="w-full sm:w-[48%] xl:w-[30%] shadow-lg py-[34px] px-[32px] rounded-[20px]">
             <Image src="/s1.svg" className="w-full" />
 
             <div className="mt-9">
-              <h2 className=" font-darker font-semibold 2xl:text-[28px] 2xl:leading-[110%] text-black">
+              <h2 className=" font-darker font-semibold text-[25px] 2xl:text-[28px] 2xl:leading-[110%] text-black">
                 Development courses
               </h2>
-              <p className=" mt-[15px] font-roboto font-normal 2xl:text-[16px] 2xl:leading-[170%] text-textoff 2xl:w-[280px]">
+              <p className=" mt-[15px] font-roboto font-normal text-[14px] 2xl:text-[16px] 2xl:leading-[170%] text-textoff 2xl:w-[280px]">
                 Culpa non ex tempor qui nulla laborum. Laboris culpa ea
                 incididunt dolore ipsum tempor duis do ullamco eiusmod officia
                 magna ad id.
@@ -40,28 +40,28 @@ const Service = () => {
             </div>
           </div>
 
-          <div className="w-[30%] shadow-lg py-[34px] px-[32px] rounded-[20px]">
+          <div className="w-full sm:w-[48%] xl:w-[30%] shadow-lg py-[34px] px-[32px] rounded-[20px]">
             <Image src="/s2.svg" className="w-full" />
 
             <div className="mt-9">
-              <h2 className=" font-darker font-semibold 2xl:text-[28px] 2xl:leading-[110%] text-black">
+              <h2 className=" font-darker font-semibold text-[25px] 2xl:text-[28px] 2xl:leading-[110%] text-black">
                 Money saving services
               </h2>
-              <p className=" mt-[15px] font-roboto font-normal 2xl:text-[16px] 2xl:leading-[170%] text-textoff 2xl:w-[280px]">
+              <p className=" mt-[15px] font-roboto font-normal text-[14px] 2xl:text-[16px] 2xl:leading-[170%] text-textoff 2xl:w-[280px]">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
               </p>
             </div>
           </div>
 
-          <div className="w-[30%] shadow-lg py-[34px] px-[32px] rounded-[20px]">
+          <div className="w-full sm:w-[48%] xl:w-[30%] shadow-lg py-[34px] px-[32px] rounded-[20px]">
             <Image src="/s3.svg" className="w-full" />
 
             <div className="mt-9">
-              <h2 className=" font-darker font-semibold 2xl:text-[28px] 2xl:leading-[110%] text-black">
+              <h2 className=" font-darker font-semibold text-[25px] 2xl:text-[28px] 2xl:leading-[110%] text-black">
                 Usability interface
               </h2>
-              <p className=" mt-[15px] font-roboto font-normal 2xl:text-[16px] 2xl:leading-[170%] text-textoff 2xl:w-[280px]">
+              <p className=" mt-[15px] font-roboto font-normal text-[14px] 2xl:text-[16px] 2xl:leading-[170%] text-textoff 2xl:w-[280px]">
                 Velit officia consequat duis enim velit mollit. Exercitation
                 veniam consequat sunt nostrud amet. Culpa non ex tempor qui
                 nulla laborum.

@@ -13,7 +13,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={
-        "text-main h-auto w-auto inline-block absolute top-[-80px] right-0"
+        "text-main h-auto w-auto inline-block absolute z-40 top-[-80px] right-0"
       }
       style={{}}
       onClick={onClick}
@@ -28,7 +28,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={
-        "text-main h-auto w-auto inline-block absolute top-[-80px] right-10"
+        "text-main h-auto w-auto inline-block absolute z-40 top-[-80px] right-10"
       }
       style={{}}
       onClick={onClick}
@@ -46,11 +46,44 @@ const Comments = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <section className=" mt-[160px] relative">
       <Image
-        className="absolute left-20 top-[-50px] w-[150px]"
+        className=" hidden lg:block absolute left-20 top-[-50px] w-[150px]"
         src="/shape1.svg"
         alt="shape"
       />
@@ -62,10 +95,10 @@ const Comments = () => {
           </Flex>
 
           <div className="mt-5 relative">
-            <p className=" absolute w-full left-0 top-[-15px] font-code font-normal xl:text-[40px] text-fadeText">
+            <p className=" absolute w-full left-0 top-[-15px] font-code font-normal text-[20px] xl:text-[40px] text-fadeText">
               they say about us
             </p>
-            <p className=" relative z-10 font-darker font-semibold xl:w-[447px] xl:text-[50px] xl:leading-[100%] text-black capitalize">
+            <p className=" relative z-10 font-darker font-semibold xl:w-[447px] text-[30px] xl:text-[50px] xl:leading-[100%] text-black capitalize">
               they say about us
             </p>
           </div>

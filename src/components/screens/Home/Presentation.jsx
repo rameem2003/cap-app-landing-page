@@ -25,10 +25,10 @@ const Presentation = () => {
           </Flex>
 
           <div className="mt-5 relative">
-            <p className=" absolute w-full text-center left-[50%] top-[-15px] translate-x-[-50%] font-code font-normal 2xl:text-[40px] text-fadeText">
+            <p className=" absolute w-full text-center left-[50%] top-[-1px] xl:top-[-15px] translate-x-[-50%] font-code font-normal text-[20px] 2xl:text-[40px] text-fadeText">
               watch our UI presentation
             </p>
-            <p className=" relative z-10 font-darker font-semibold 2xl:text-[50px] 2xl:leading-[100%] text-white text-center capitalize">
+            <p className=" relative z-10 font-darker font-semibold 2xl:text-[50px] text-[20px] 2xl:leading-[100%] text-white text-center capitalize">
               watch our UI presentation
             </p>
           </div>
@@ -70,34 +70,34 @@ const Presentation = () => {
             modules={[EffectCoverflow, Pagination, Navigation]}
             className="mySwiper"
           >
-            <SwiperSlide className="w-auto text-center bg-none">
+            <SwiperSlide className="xl:w-auto text-center bg-none w-[40%]">
               <Image src="slide1.png" className="mx-auto" />
             </SwiperSlide>
-            <SwiperSlide className="w-auto text-center bg-none">
+            <SwiperSlide className="xl:w-auto text-center bg-none w-[40%]">
               <Image src="slide1.png" className="mx-auto" />
             </SwiperSlide>
-            <SwiperSlide className="w-auto text-center bg-none">
+            <SwiperSlide className="xl:w-auto text-center bg-none w-[40%]">
               <Image src="slide1.png" className="mx-auto" />
             </SwiperSlide>
-            <SwiperSlide className="w-auto text-center bg-none">
+            <SwiperSlide className="xl:w-auto text-center bg-none w-[40%]">
               <Image src="slide1.png" className="mx-auto" />
             </SwiperSlide>
-            <SwiperSlide className="w-auto text-center bg-none">
+            <SwiperSlide className="xl:w-auto text-center bg-none w-[40%]">
               <Image src="slide1.png" className="mx-auto" />
             </SwiperSlide>
-            <SwiperSlide className="w-auto text-center bg-none">
+            <SwiperSlide className="xl:w-auto text-center bg-none w-[40%]">
               <Image src="slide1.png" className="mx-auto" />
             </SwiperSlide>
-            <SwiperSlide className="w-auto text-center bg-none">
+            <SwiperSlide className="xl:w-auto text-center bg-none w-[40%]">
               <Image src="slide1.png" className="mx-auto" />
             </SwiperSlide>
-            <SwiperSlide className="w-auto text-center bg-none">
+            <SwiperSlide className="xl:w-auto text-center bg-none w-[40%]">
               <Image src="slide1.png" className="mx-auto" />
             </SwiperSlide>
-            <SwiperSlide className="w-auto text-center bg-none">
+            <SwiperSlide className="xl:w-auto text-center bg-none w-[40%]">
               <Image src="slide1.png" className="mx-auto" />
             </SwiperSlide>
-            <SwiperSlide className="w-auto text-center bg-none">
+            <SwiperSlide className="xl:w-auto text-center bg-none w-[40%]">
               <Image src="slide1.png" className="mx-auto" />
             </SwiperSlide>
           </Swiper>

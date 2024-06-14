@@ -12,13 +12,13 @@ const Pricing = () => {
   return (
     <section className="mt-[160px]">
       <Container>
-        <Flex className=" relative">
+        <Flex className=" relative flex-col md:flex-row  gap-6 md:gap-0">
           <Image
-            className="absolute right-[-200px] top-[-120px] w-[150px]"
+            className=" hidden md:block absolute xl:right-[-50px] 2xl:right-[-200px] top-[-120px] w-[150px]"
             src="/shape1.svg"
             alt="shape"
           />
-          <div className="w-1/2">
+          <div className="full md:w-1/2">
             <div>
               <Flex className="items-center justify-start gap-1">
                 <div className="h-[6px] w-[6px] rounded-full bg-main"></div>
@@ -26,10 +26,10 @@ const Pricing = () => {
               </Flex>
 
               <div className="mt-5 relative">
-                <p className=" absolute w-full left-0 top-[-15px] font-code font-normal xl:text-[40px] text-fadeText">
+                <p className=" absolute w-full left-0 top-[-15px] font-code font-normal text-[20px] xl:text-[40px] text-fadeText">
                   easy download and ready to use
                 </p>
-                <p className=" relative z-10 font-darker font-semibold xl:w-[447px] xl:text-[50px] xl:leading-[100%] text-black capitalize">
+                <p className=" relative z-10 font-darker font-semibold xl:w-[447px] text-[30px] xl:text-[50px] xl:leading-[100%] text-black capitalize">
                   easy download and ready to use
                 </p>
               </div>
@@ -42,30 +42,30 @@ const Pricing = () => {
               dolore ipsum. Proident excepteur ex aliqua cupidatat adipisicing.
             </p>
 
-            <Flex className="gap-5 mt-[50px]">
-              <button className=" py-[18px] px-[35px] bg-main rounded-full">
-                <Flex className="gap-[10px]">
-                  <FaGooglePlay className=" text-[24px] text-white" />
+            <Flex className="gap-5 mt-[50px] flex-row">
+              <button className=" py-[8px] px-[20px] xl:py-[18px] xl:px-[35px] bg-main rounded-full">
+                <Flex className="gap-[10px] items-center">
+                  <FaGooglePlay className=" hidden xl:block xl:text-[24px] text-white" />
 
                   <div>
-                    <p className=" font-roboto font-normal xl:text-[10px] xl:leading-[100%] text-white">
+                    <p className=" font-roboto font-normal text-[8px] xl:text-[10px] xl:leading-[100%] text-white">
                       Download on the
                     </p>
-                    <p className=" text-left font-roboto font-medium xl:text-[14px] xl:leading-[120%] text-white">
+                    <p className=" text-left font-roboto font-medium text-[12px] xl:text-[14px] xl:leading-[120%] text-white">
                       Google play
                     </p>
                   </div>
                 </Flex>
               </button>
-              <button className=" py-[18px] px-[35px] border-[2px] border-main  rounded-full">
-                <Flex className="gap-[10px]">
-                  <GrApple className=" text-[24px] text-main" />
+              <button className=" py-[8px] px-[20px] xl:py-[18px] xl:px-[35px] border-[2px] border-main  rounded-full">
+                <Flex className="gap-[10px] items-center">
+                  <GrApple className=" hidden xl:block text-[24px] text-main" />
 
                   <div>
-                    <p className=" font-roboto font-normal xl:text-[10px] xl:leading-[100%] text-main">
+                    <p className=" font-roboto font-normal text-[8px] xl:text-[10px] xl:leading-[100%] text-main">
                       Download on the
                     </p>
-                    <p className=" text-left font-roboto font-medium xl:text-[14px] xl:leading-[120%] text-main">
+                    <p className=" text-left font-roboto font-medium text-[12px] xl:text-[14px] xl:leading-[120%] text-main">
                       App Store
                     </p>
                   </div>
@@ -73,9 +73,9 @@ const Pricing = () => {
               </button>
             </Flex>
           </div>
-          <div className="w-1/2">
-            <Flex className="gap-[52px]">
-              <div className="w-1/2">
+          <div className="full md:w-1/2">
+            <Flex className="gap-[52px] flex-col sm:flex-row">
+              <div className="w-full sm:w-1/2">
                 <h4 className=" font-roboto font-medium xl:text-[12px] xl:leading-[170%] text-main uppercase">
                   basic
                 </h4>
@@ -132,7 +132,7 @@ const Pricing = () => {
                   </LI>
                 </UL>
               </div>
-              <div className="w-1/2">
+              <div className="w-full sm:w-1/2">
                 <h4 className=" font-roboto font-medium xl:text-[12px] xl:leading-[170%] text-main uppercase">
                   popular
                 </h4>

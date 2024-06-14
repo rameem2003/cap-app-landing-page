@@ -4,10 +4,10 @@ import Flex from "../../common/Flex";
 
 const CommentCard = () => {
   return (
-    <div className=" m-[4px] w-[95%] py-[30px] px-10 rounded-[20px] shadow-md">
+    <div className=" m-[4px] w-[95%] py-[10px] xl:py-[30px] px-10 rounded-[20px] shadow-md">
       <Image src="comma.png" />
 
-      <p className=" mt-[15px] w-[400px] font-roboto font-normal xl:text-[16px] xl:leading-[170%] text-textoff">
+      <p className=" mt-[15px] xl:w-[400px] font-roboto font-normal xl:text-[16px] xl:leading-[170%] text-textoff">
         “Velit occaecat duis occaecat nostrud. Veniam occaecat id ea Lorem est
         officia excepteur cupidatat consectetur. Labore do nulla ipsum dolore
         ipsum. Proident excepteur ex aliqua cupidatat.”

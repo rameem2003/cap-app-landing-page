@@ -5,14 +5,14 @@ import Image from "../../common/Image";
 
 const Trail = () => {
   return (
-    <section className=" bg-TrailBG py-[160px] h-[1064px] mt-5 relative">
+    <section className="bg-TrailBG py-[160px] h-auto xl:h-[1064px] mt-5 relative">
       <Image
-        className="absolute right-[100px] top-[150px] w-[150px]"
+        className="absolute hidden lg:block right-[100px] top-[150px] w-[150px]"
         src="/shape1.svg"
         alt="shape"
       />
       <Container>
-        <div className=" w-full bg-CTABG bg-cover bg-no-repeat py-[153px]">
+        <div className=" w-full rounded-lg xl:rounded-none bg-[#3831a1] xl:bg-CTABG xl:bg-transparent bg-cover bg-no-repeat py-[153px]">
           <div className=" text-center">
             <Flex className="gap-[15px] justify-center">
               <Flex className="items-center gap-1">

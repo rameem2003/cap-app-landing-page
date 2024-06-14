@@ -8,8 +8,8 @@ const ArticleSection = () => {
   return (
     <section className="mt-[160px]">
       <Container>
-        <Flex className="gap-[53px]">
-          <div className="w-1/2">
+        <Flex className="gap-[53px] flex-col md:flex-row">
+          <div className="w-full md:w-1/2">
             <div>
               <Flex className="items-center justify-start gap-1">
                 <div className="h-[6px] w-[6px] rounded-full bg-main"></div>
@@ -36,7 +36,7 @@ const ArticleSection = () => {
               read more
             </Link>
           </div>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <ArticleCard />
           </div>
         </Flex>

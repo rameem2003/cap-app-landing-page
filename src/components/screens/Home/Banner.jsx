@@ -7,8 +7,8 @@ const Banner = () => {
   return (
     <section className=" bg-bannerBG bg-cover bg-no-repeat">
       <Container>
-        <Flex className="py-[256px]">
-          <div className="w-1/2">
+        <Flex className="py-[256px] flex-col sm:flex-row">
+          <div className=" w-full md:w-1/2">
             <Flex className="gap-[15px]">
               <Flex className="items-center gap-1">
                 <div className="h-[6px] w-[6px] rounded-full bg-main"></div>
@@ -20,11 +20,11 @@ const Banner = () => {
               </p>
             </Flex>
 
-            <h1 className=" font-darker font-extrabold xl:text-[80px] xl:leading-[90%] text-white capitalize">
+            <h1 className=" font-darker font-extrabold text-[35px] xl:text-[80px] xl:leading-[90%] text-white capitalize">
               work faster with powerful tools
             </h1>
 
-            <p className=" font-darker font-medium xl:text-[28px] xl:leading-[110%] text-white mt-[30px]">
+            <p className=" font-darker font-medium  text-[20px] xl:text-[28px] xl:leading-[110%] text-white mt-[30px]">
               Laboris culpa ea incididunt dolore ipsum tempor duis do ullamco
               eiusmod officia magna ad id.
             </p>
@@ -33,7 +33,7 @@ const Banner = () => {
               Learn more
             </button>
           </div>
-          <div className="w-1/2 relative">
+          <div className=" hidden w-full md:block md:w-1/2 relative">
             <Image
               className="absolute w-[80%] left-[50px]"
               src="/phone.png"

@@ -10,11 +10,14 @@ const Footer = () => {
     <footer className="pt-[393px] bg-footerBG bg-cover bg-no-repeat mt-[274px] ">
       <Container>
         <div className=" relative">
-          <Flex className="p-10 rounded-[20px] bg-white w-full h-[350px] absolute left-0 top-[-500px]">
-            <div className="w-4/12 relative">
-              <Image className="absolute left-0 bottom-0" src="/mail.svg" />
+          <Flex className=" flex-col gap-6 lg:gap-0 lg:flex-row p-10 rounded-[20px] bg-white w-full h-auto md:h-[350px] absolute left-0 top-[-400px] xl:top-[-500px]">
+            <div className=" w-full lg:w-4/12 relative">
+              <Image
+                className="absolute w-[60%] xl:w-auto left-[50%] translate-x-[-50%] lg:left-0 lg:translate-x-0 bottom-0"
+                src="/mail.svg"
+              />
             </div>
-            <div className="w-8/12">
+            <div className=" w-full lg:w-8/12">
               <div>
                 <Flex className="gap-[15px]">
                   <Flex className="items-center gap-1">
@@ -35,16 +38,16 @@ const Footer = () => {
                   tempor duis do ullamco eiusmod officia magna ad id.
                 </p>
 
-                <Flex className="mt-[26px] gap-5">
+                <Flex className="mt-[26px] flex-col md:flex-row gap-5">
                   <input
                     type="text"
                     name=""
                     id=""
                     placeholder="Email"
-                    className=" w-[80%] border-[1px] border-[#E6EBFC] rounded-full py-[17px] px-[30px] outline-none"
+                    className=" w-full md:w-[60%] lg:w-[80%] border-[1px] border-[#E6EBFC] rounded-full py-[17px] px-[30px] outline-none"
                   />
 
-                  <button className=" w-[20%] py-4 px-[35px] rounded-full bg-main font-roboto font-medium xl:text-[16px] text-white">
+                  <button className=" w-full md:w-[40%] lg:w-[20%] py-4 px-[35px] rounded-full bg-main font-roboto font-medium xl:text-[16px] text-white">
                     Subscribe
                   </button>
                 </Flex>
@@ -53,7 +56,7 @@ const Footer = () => {
           </Flex>
         </div>
 
-        <UL className="flex items-center gap-[30px] justify-center">
+        <UL className=" hidden lg:flex items-center gap-[30px] justify-center ">
           <LI className="flex items-center gap-[30px]">
             <span className="  font-roboto font-normal 2xl:text-[16px] 2xl:leading-[170%] text-white">
               Features
