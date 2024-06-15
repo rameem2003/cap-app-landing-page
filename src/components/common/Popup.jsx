@@ -4,9 +4,9 @@ import Image from "./Image";
 const Popup = ({ popup }) => {
   return (
     <div
-      className={` duration-700 ease-in-out  bg-popupBG bg-cover bg-no-repeat py-[80px] px-[20px] fixed top-[50%] translate-y-[-50%] ${
-        popup ? "right-0" : "right-[-100%]"
-      }  max-w-[600px] rounded-l-[20px]`}
+      className={` duration-700 ease-in-out  bg-popupBG bg-cover bg-no-repeat py-4 xl:py-[80px] px-[20px] fixed top-[50%] translate-y-[-50%] ${
+        popup ? "right-0" : "right-[-300%]"
+      }  w-full xl:max-w-[600px] rounded-l-[20px]`}
     >
       <Image
         src="/lotapata.png"

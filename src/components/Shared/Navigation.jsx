@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Container from "../common/Container";
 import UL from "../common/UL";
 import LI from "../common/LI";
@@ -13,6 +13,8 @@ const Navigation = () => {
   const [popup, setPopup] = useState(false);
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const menuRef = useRef();
+  const popupRef = useRef();
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -24,6 +26,13 @@ const Navigation = () => {
       setScrolled(false);
     }
   };
+
+  useEffect(() => {
+    document.addEventListener("click", (e) => {
+      menuRef.current.contains(e.target) ? setToggle(true) : setToggle(false);
+      popupRef.current.contains(e.target) ? setPopup(true) : setPopup(false);
+    });
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -91,6 +100,7 @@ const Navigation = () => {
 
             <LI>
               <button
+                ref={popupRef}
                 onClick={() => setPopup(!popup)}
                 className=" px-5 py-1 rounded-full border-[2px] border-main font-roboto font-medium 2xl:text-[16px]  2xl:leading-[170%] text-main"
               >
@@ -99,7 +109,7 @@ const Navigation = () => {
             </LI>
           </UL>
 
-          <div className="w-1/2 items-end block lg:hidden">
+          <div ref={menuRef} className="w-1/2 items-end block lg:hidden">
             <TiThMenuOutline
               onClick={() => setToggle(!toggle)}
               className=" ml-auto text-2xl text-white cursor-pointer"
