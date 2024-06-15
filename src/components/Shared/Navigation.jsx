@@ -7,8 +7,10 @@ import Flex from "./../common/Flex";
 import { FiSmartphone } from "react-icons/fi";
 import { TiThMenuOutline } from "react-icons/ti";
 import { Link } from "react-router-dom";
+import Popup from "../common/Popup";
 
 const Navigation = () => {
+  const [popup, setPopup] = useState(false);
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -88,7 +90,10 @@ const Navigation = () => {
             </LI>
 
             <LI>
-              <button className=" px-5 py-1 rounded-full border-[2px] border-main font-roboto font-medium 2xl:text-[16px]  2xl:leading-[170%] text-main">
+              <button
+                onClick={() => setPopup(!popup)}
+                className=" px-5 py-1 rounded-full border-[2px] border-main font-roboto font-medium 2xl:text-[16px]  2xl:leading-[170%] text-main"
+              >
                 Free trial
               </button>
             </LI>
@@ -110,6 +115,8 @@ const Navigation = () => {
           +1 742 65 84 122
         </p>
       </Flex>
+
+      <Popup popup={popup} />
     </nav>
   );
 };

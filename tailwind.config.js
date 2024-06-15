@@ -10,6 +10,7 @@ export default {
         CTABG: "url(/CTA.png)",
         footerBG: "url(/footer.png)",
         pageBG: "url(/pagebanner.png)",
+        popupBG: "url(/popupgb.png)",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
